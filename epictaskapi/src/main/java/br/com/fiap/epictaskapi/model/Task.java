@@ -23,6 +23,12 @@ public class Task {
         this.description = description;
     }
 
+    public Task(String title, String description, int score) {
+        this.title = title;
+        this.description = description;
+        this.score = score;
+    }
+
     public Task(String title, String description, int score, int status) {
         this.title = title;
         this.description = description;
