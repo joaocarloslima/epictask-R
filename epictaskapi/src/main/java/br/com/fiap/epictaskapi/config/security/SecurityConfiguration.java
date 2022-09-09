@@ -32,16 +32,16 @@ public class SecurityConfiguration {
 
     }
 
-    @Bean
-    public UserDetailsService users(){
-        UserDetails user = User.builder()
-            .username("joao@fiap.com.br")
-            .password("$2a$12$DBD5gQAPt3Q0mlso1JRfQODz8C4sq0u.PWw6Db5oAhCvSarXOCaW6")
-            .roles("USER")
-        .build();
+    // @Bean
+    // public UserDetailsService users(){
+    //     UserDetails user = User.builder()
+    //         .username("joao@fiap.com.br")
+    //         .password("$2a$12$DBD5gQAPt3Q0mlso1JRfQODz8C4sq0u.PWw6Db5oAhCvSarXOCaW6")
+    //         .roles("USER")
+    //     .build();
 
-        return new InMemoryUserDetailsManager(user);
-    }
+    //     return new InMemoryUserDetailsManager(user);
+    // }
 
     @Bean
     public PasswordEncoder passwordEncoder(){
